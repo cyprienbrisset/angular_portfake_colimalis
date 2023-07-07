@@ -16,6 +16,8 @@ import { TrackingStateComponent } from './components/tracking-state/tracking-sta
 import {DialogService} from "primeng/dynamicdialog";
 import {DialogModule} from "primeng/dialog";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {TooltipModule} from "primeng/tooltip";
+import {StyleClassModule} from "primeng/styleclass";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     FormsModule,
     TableModule,
     TagModule,
-    DialogModule
+    DialogModule,
+    TooltipModule,
+    StyleClassModule
   ],
   providers: [ApiService, DialogService],
   bootstrap: [AppComponent]
