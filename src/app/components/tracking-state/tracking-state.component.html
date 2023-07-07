@@ -1,6 +1,10 @@
-<li class="pb-4 border-bottom-1 surface-border">
-  <div class="border-2 border-dashed surface-border border-round surface-0 p-4">
-    {{event.shortLabel}}
-    {{event.longLabel}}
+<li class="flex align-items-center py-2 border-bottom-1 surface-border">
+  <div
+    class="w-3rem h-3rem flex align-items-center justify-content-center bg-green-100 border-circle mr-3 flex-shrink-0">
+    <i class="pi pi-arrow-down text-xl text-green-500"></i>
   </div>
+  <span class="text-900 line-height-3 font-medium">
+    {{event.shortLabel}}
+    <span class="text-700 font-normal">{{event.longLabel}}</span>
+  </span>
 </li>

@@ -61,4 +61,6 @@ export class AppComponent {
     this.ref.onMaximize.subscribe((value) => {
     });
   }
+
+  protected readonly eval = eval;
 }
