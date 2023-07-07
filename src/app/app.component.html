@@ -3,7 +3,8 @@
     src="assets/images/colimalis.svg" alt="Image" height="60"></div>
   <div class="flex flex-1 px-3"><span class="flex align-items-center"><i
     class="pi pi-search "></i></span>
-    <input [(ngModel)]="shipid" (keydown)="OnEnter($event)" type="text" class="appearance-none border-none flex-auto bg-transparent outline-none p-component pl-3">
+    <input [(ngModel)]="shipid" (keydown)="OnEnter($event)" type="text"
+           class="appearance-none border-none flex-auto bg-transparent outline-none p-component pl-3">
   </div>
   <a pripple="" pStyleClass="@next" enterclass="hidden" leavetoclass="hidden"
      class="p-ripple p-element cursor-pointer flex align-items-center justify-content-center lg:hidden text-white pr-5"><i
@@ -17,6 +18,17 @@
         class="pi pi-inbox text-base lg:text-2xl mr-2 lg:mr-0"></i><span
         class="block lg:hidden font-medium">Inbox</span><span class="p-ink"></span></a></li>
     </ul>
+  </div>
+</div>
+<div #banner class="md:px-8 px-4 py-8 surface-section ng-star-inserted ">
+  <div class="bg-cyan-600 text-white p-3 flex justify-content-between align-items-center flex-wrap shadow-2"
+       style="border-radius: 8px;">
+    <div class="font-bold">🔥 Attention!</div>
+    <div class="align-items-center flex"><span class="line-height-3 hidden lg:block">Site de démonstration, il ne s'agit pas d'un vrai site commercial</span></div>
+    <a (click)="hide()" pripple=""
+       class="p-ripple p-element flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-cyan-400 cursor-pointer transition-colors transition-duration-150"
+       style="width: 2rem; height: 2rem;"><i class="pi pi-times"></i><span class="p-ink"
+                                                                           style="height: 32px; width: 32px; top: 1px; left: -9.48438px;"></span></a>
   </div>
 </div>
 

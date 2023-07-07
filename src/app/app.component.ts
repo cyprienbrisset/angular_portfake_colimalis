@@ -12,12 +12,14 @@ import {TrackingDialogComponent} from "./components/tracking-dialog/tracking-dia
 export class AppComponent {
 
   title = 'colimalis';
-  public shipid: string = ''
+  public shipid: string = 'CB662173705US'
 
   ref: DynamicDialogRef | undefined;
 
   // @ts-ignore
   @ViewChild('idship') myInput: ElementRef;
+  // @ts-ignore
+  @ViewChild('banner') banner: ElementRef;
 
   constructor(private api: ApiService, public dialogService: DialogService) {
 
@@ -63,4 +65,8 @@ export class AppComponent {
   }
 
   protected readonly eval = eval;
+
+  hide() {
+    this.banner.nativeElement.classList.add('hidden');
+  }
 }
